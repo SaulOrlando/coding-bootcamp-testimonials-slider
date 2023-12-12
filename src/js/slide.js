@@ -28,3 +28,9 @@ const toggle_section = () => {
 arrows.forEach(arrow => {
   arrow.addEventListener("click", toggle_section)
 })
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft"){
+    toggle_section()
+  }
+})
